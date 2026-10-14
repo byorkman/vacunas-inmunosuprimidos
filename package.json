@@ -1,0 +1,10 @@
+{
+  "name": "vacunas-inmunosuprimidos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chequeo de vacunas en pacientes inmunosuprimidos de reumatología pediátrica",
+  "scripts": {
+    "test": "node --test"
+  }
+}

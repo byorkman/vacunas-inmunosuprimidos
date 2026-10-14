@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vacunas en inmunosuprimidos</title>
+  <meta name="description" content="Chequeo de vacunas en pacientes inmunosuprimidos de reumatología pediátrica.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Vacunas en inmunosuprimidos</h1>
+      <p class="sub">Qué se puede aplicar según la medicación</p>
+    </header>
+
+    <p class="aviso">Reglas pendientes de validación médica. No reemplazan el criterio clínico ni las normas vigentes.</p>
+
+    <section class="panel">
+      <h2>Momento del tratamiento</h2>
+      <div class="segmented">
+        <label><input type="radio" name="fase" value="antes" checked> Antes de empezar</label>
+        <label><input type="radio" name="fase" value="durante"> Durante</label>
+        <label><input type="radio" name="fase" value="suspendido"> Suspendido</label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Medicación</h2>
+      <div id="medicaciones" class="checks"></div>
+    </section>
+
+    <section id="resultado" aria-live="polite"></section>
+
+    <footer>
+      <p>Los datos no se guardan ni se envían: todo se hace solo en este dispositivo.</p>
+      <p>Fuentes: EULAR/PRES 2021 (Jansen MHA, et al. <i>Ann Rheum Dis</i> 2023;82:35-47), IDSA 2013 (Rubin LG, et al. <i>Clin Infect Dis</i> 2014;58:e44-100) y Calendario Nacional de Vacunación (Ministerio de Salud de la Nación).</p>
+    </footer>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
