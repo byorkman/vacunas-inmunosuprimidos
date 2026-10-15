@@ -25,7 +25,7 @@ function actualizar() {
   const ids = [...contMeds.querySelectorAll("input:checked")].map((i) => i.value);
   const fase = document.querySelector('input[name="fase"]:checked').value;
   if (!ids.length) {
-    resultado.innerHTML = `<p class="pendiente">Elegí la medicación para ver las recomendaciones.</p>`;
+    resultado.innerHTML = `<p class="pendiente">Seleccionar la medicación para ver las recomendaciones.</p>`;
     return;
   }
   const r = evaluar(ids, fase);
